@@ -1,0 +1,41 @@
+List of devices attached
+emulator-5554   device
+emulator-5556   device
+emulator-5558   device
+emulator-5560   device
+emulator-5562   device
+emulator-5564   device
+emulator-5566   device
+emulator-5568   device
+emulator-5570   device
+emulator-5572   device
+
+
+
+import subprocess
+
+# Run adb devices command
+result = subprocess.run(['adb', 'devices'], capture_output=True, text=True)
+
+# Split lines and strip any empty ones
+lines = [line.strip() for line in result.stdout.strip().splitlines() if line.strip()]
+
+# Get the last line (excluding the header line "List of devices attached")
+if len(lines) > 1:
+    last_device = lines[-1]
+    print("Last device:", last_device)
+else:
+    print("No devices found.")
+
+
+D:\leidian\LDPlayer9>ldconsole.exe list2
+0,auto-phx-001,0,0,0,-1,-1,320,540,120
+1,auto-ash-001,0,0,0,-1,-1,320,540,120
+2,auto-phx-visal,0,0,0,-1,-1,320,540,120
+3,auto-nyc-001,0,0,0,-1,-1,320,540,120
+4,auto-sjc-001,0,0,0,-1,-1,320,540,120
+5,auto-lax-001,0,0,0,-1,-1,320,540,120
+6,auto-las-001,0,0,0,-1,-1,320,540,120
+7,auto-nc-001,0,0,0,-1,-1,320,540,120
+8,auto-loc-001,0,0,0,-1,-1,320,540,120
+9,auto-loc-002,0,0,0,-1,-1,320,540,120
