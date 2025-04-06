@@ -1,0 +1,128 @@
+{
+  "Seattle": {
+      "state_full": "Washington",
+      "state_abbr": "WA",
+      "state_code": "sea",
+      "timezone": "America/Los_Angeles"
+  },
+  "Bend": {
+      "state_full": "Oregon",
+      "state_abbr": "OR",
+      "state_code": "bnd",
+      "timezone": "America/Los_Angeles"
+  },
+  "San Francisco": {
+      "state_full": "California",
+      "state_abbr": "CA",
+      "state_code": "sfo",
+      "timezone": "America/Los_Angeles"
+  },
+  "San Jose": {
+      "state_full": "California",
+      "state_abbr": "CA",
+      "state_code": "sjc",
+      "timezone": "America/Los_Angeles"
+  },
+  "Salt Lake City": {
+      "state_full": "Utah",
+      "state_abbr": "UT",
+      "state_code": "slc",
+      "timezone": "America/Denver"
+  },
+  "Los Angeles": {
+      "state_full": "California",
+      "state_abbr": "CA",
+      "state_code": "lax",
+      "timezone": "America/Los_Angeles"
+  },
+  "Las Vegas": {
+      "state_full": "Nevada",
+      "state_abbr": "NV",
+      "state_code": "las",
+      "timezone": "America/Los_Angeles"
+  },
+  "Denver": {
+      "state_full": "Colorado",
+      "state_abbr": "CO",
+      "state_code": "den",
+      "timezone": "America/Denver"
+  },
+  "Phoenix": {
+      "state_full": "Arizona",
+      "state_abbr": "AZ",
+      "state_code": "phx",
+      "timezone": "America/Phoenix"
+  },
+  "Chicago": {
+      "state_full": "Illinois",
+      "state_abbr": "IL",
+      "state_code": "chi",
+      "timezone": "America/Chicago"
+  },
+  "Buffalo": {
+      "state_full": "New York",
+      "state_abbr": "NY",
+      "state_code": "buf",
+      "timezone": "America/New_York"
+  },
+  "Detroit": {
+      "state_full": "Michigan",
+      "state_abbr": "MI",
+      "state_code": "dtw",
+      "timezone": "America/Detroit"
+  },
+  "Boston": {
+      "state_full": "Massachusetts",
+      "state_abbr": "MA",
+      "state_code": "bos",
+      "timezone": "America/New_York"
+  },
+  "Kansas City": {
+      "state_full": "Missouri",
+      "state_abbr": "MO",
+      "state_code": "mci",
+      "timezone": "America/Chicago"
+  },
+  "Latham": {
+      "state_full": "New York",
+      "state_abbr": "NY",
+      "state_code": "ltm",
+      "timezone": "America/New_York"
+  },
+  "New York": {
+      "state_full": "New York",
+      "state_abbr": "NY",
+      "state_code": "nyc",
+      "timezone": "America/New_York"
+  },
+  "Ashburn": {
+      "state_full": "Virginia",
+      "state_abbr": "VA",
+      "state_code": "ash",
+      "timezone": "America/New_York"
+  },
+  "Dallas": {
+      "state_full": "Texas",
+      "state_abbr": "TX",
+      "state_code": "dfw",
+      "timezone": "America/Chicago"
+  },
+  "Charlotte": {
+      "state_full": "North Carolina",
+      "state_abbr": "NC",
+      "state_code": "clt",
+      "timezone": "America/New_York"
+  },
+  "Atlanta": {
+      "state_full": "Georgia",
+      "state_abbr": "GA",
+      "state_code": "atl",
+      "timezone": "America/New_York"
+  },
+  "Houston": {
+      "state_full": "Texas",
+      "state_abbr": "TX",
+      "state_code": "hou",
+      "timezone": "America/Chicago"
+  }
+}
