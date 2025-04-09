@@ -39,3 +39,53 @@ D:\leidian\LDPlayer9>ldconsole.exe list2
 7,auto-nc-001,0,0,0,-1,-1,320,540,120
 8,auto-loc-001,0,0,0,-1,-1,320,540,120
 9,auto-loc-002,0,0,0,-1,-1,320,540,120
+
+
+"""0,auto-phx-001,0,0,0,-1,-1,320,540,120
+1,auto-ash-001,0,0,0,-1,-1,320,540,120
+2,auto-phx-visal,0,0,0,-1,-1,320,540,120
+3,auto-nyc-001,0,0,0,-1,-1,320,540,120
+4,auto-sjc-001,0,0,0,-1,-1,320,540,120
+5,auto-lax-001,0,0,0,-1,-1,320,540,120
+6,auto-las-001,0,0,0,-1,-1,320,540,120
+7,auto-nc-001,0,0,0,-1,-1,320,540,120
+8,auto-loc-001,0,0,0,-1,-1,320,540,120
+9,auto-loc-002,0,0,0,-1,-1,320,540,120"""
+
+ldinstance: list[str] = ['0,auto-phx-001,0,0,0,-1,-1,320,540,120',
+                         '1,auto-ash-001,0,0,0,-1,-1,320,540,120',
+                         '2,auto-phx-visal,0,0,0,-1,-1,320,540,120',
+                         '3,auto-nyc-001,0,0,0,-1,-1,320,540,120',
+                         '4,auto-sjc-001,0,0,0,-1,-1,320,540,120',
+                         '5,auto-lax-001,0,0,0,-1,-1,320,540,120',
+                         '6,auto-las-001,0,0,0,-1,-1,320,540,120',
+                         '7,auto-nc-001,0,0,0,-1,-1,320,540,120',
+                         '8,auto-loc-001,0,0,0,-1,-1,320,540,120',
+                         '9,auto-loc-002,0,0,0,-1,-1,320,540,120']
+for instance in ldinstance:
+    parts = instance.split(',')  # Split the string by commas
+    index = parts[0]             # First part is the index
+    name = parts[1].split('-')[0]  # Extract "auto" from "auto-phx-001"
+    location = parts[1].split('-')[1]  # Extract "phx" from "auto-phx-001"
+    
+    print(f"index={index}, name={name}, location={location}")
+
+for instance in ldinstance:
+    parts = instance.split(',')
+    if 'phx' in parts[1]:  # Check if 'phx' is in the name-location part
+        index = parts[0]
+        name = parts[1].split('-')[0]
+        location = parts[1].split('-')[1]
+        print(f"index={index}, name={name}, location={location}")
+
+
+
+ldname: list[str] = ['auto-phx-001', 'auto-ash-001', 'auto-phx-002', 'auto-nyc-001', 'auto-sjc-001', 'auto-lax-001', 'auto-las-001', 'auto-nc-001', 'auto-loc-001', 'auto-loc-002']
+
+filtered = filter(lambda x: x.startswith('auto'), ldname)
+#print(f"Filterd list: ", list(filtered))
+
+for n in filtered:
+    print(f"Each name : ", n)
+
+
